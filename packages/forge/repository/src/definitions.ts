@@ -13,6 +13,7 @@ import { posthogBlock } from "@typebot.io/posthog-block";
 import { qrCodeBlock } from "@typebot.io/qrcode-block";
 import { segmentBlock } from "@typebot.io/segment-block";
 import { togetherAiBlock } from "@typebot.io/together-ai-block";
+import { vertexAiBlock } from "@typebot.io/vertex-ai-block";
 import { zendeskBlock } from "@typebot.io/zendesk-block";
 
 export const forgedBlocks = {
@@ -31,6 +32,7 @@ export const forgedBlocks = {
   [groqBlock.id]: groqBlock,
   [zendeskBlock.id]: zendeskBlock,
   [posthogBlock.id]: posthogBlock,
+  [vertexAiBlock.id]: vertexAiBlock,
 };
 export type ForgedBlockDefinition =
   (typeof forgedBlocks)[keyof typeof forgedBlocks];
